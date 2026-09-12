@@ -1,11 +1,12 @@
 # NETWORKWALKS-AYUSH-B083-WK1-PM1-CYBERSECURITY-LAB-SETUP
-# Networkwalks Week 1 – Project Module 1
 
-## Cybersecurity Lab Setup with VirtualBox and Kali Linux
+## Networkwalks Week 1 – Project Module 1
+
+### Cybersecurity Lab Setup with VirtualBox and Kali Linux
 
 This repository contains my work for **Week 1 – Project Module 1** of the Networkwalks Cybersecurity Internship.
 
-The purpose of this module was to set up a basic cybersecurity lab environment using **Oracle VirtualBox** and **Kali Linux**. The environment has been configured and tested so that it can be used for the practical cybersecurity activities in the upcoming modules.
+The objective of this module was to build a practical cybersecurity lab environment using **Oracle VirtualBox and Kali Linux**. The environment was configured and verified for use in upcoming hands-on cybersecurity activities.
 
 ---
 
@@ -17,53 +18,81 @@ The purpose of this module was to set up a basic cybersecurity lab environment u
 | Virtualization Platform | Oracle VirtualBox 7.2.16 |
 | Virtual Machine | Kali Linux 2026.2 |
 | Network Type | NAT Network |
-| Network Range | `10.0.0.0/24` |
-| Kali Linux IP | `10.0.0.2/24` |
-| Gateway | `10.0.0.1` |
-| DNS Server | `8.8.8.8` |
+| Kali Linux | Configured with a static network configuration |
+| Network Connectivity | Internet connectivity verified |
+| DNS Resolution | Verified successfully |
 
 ---
 
 ## Work Completed
 
-The following tasks were completed as part of the lab setup:
+The following tasks were completed as part of the Week 1 lab setup:
 
-- Installed Oracle VirtualBox.
-- Configured a NAT Network using the required `10.0.0.0/24` subnet.
+- Installed and configured Oracle VirtualBox.
+- Configured the required NAT Network environment.
 - Imported and configured the Kali Linux virtual machine.
-- Connected Kali Linux to the configured NAT Network.
-- Assigned the static IP address `10.0.0.2/24` to Kali Linux.
-- Configured the gateway and DNS settings.
+- Connected Kali Linux to the configured virtual network.
+- Configured the Kali Linux network interface.
 - Enabled bidirectional clipboard functionality.
 - Enabled bidirectional drag-and-drop functionality.
-- Configured the shared `/downloads` folder between the host and Kali Linux.
+- Configured a shared folder between the host system and Kali Linux.
 - Verified that the shared folder was accessible from Kali Linux.
-- Tested Internet connectivity and DNS resolution from Kali Linux.
+- Tested Internet connectivity from Kali Linux.
+- Verified DNS resolution from Kali Linux.
 - Created a VirtualBox snapshot after completing the lab setup.
 
+---
 
+## Challenge and Troubleshooting
+
+During the initial network configuration, Kali Linux did not obtain the required network connectivity correctly.
+
+I reviewed the NetworkManager configuration and followed the troubleshooting procedure provided in the project instructions. The network connection was then reactivated successfully.
+
+After troubleshooting, I verified:
+
+- Network interface status
+- Internet connectivity
+- DNS resolution
+- Shared folder accessibility
+
+The lab environment was successfully brought to a working state.
+
+---
+
+## Key Learning
+
+This project provided practical experience with:
+
+- Virtual machine deployment and configuration
+- Kali Linux environment setup
+- Linux network configuration
+- Virtual networking
+- Network troubleshooting
+- Shared folder configuration
+- Connectivity and DNS verification
+- Creating VM snapshots for recovery
+
+The setup provides a controlled environment for performing the practical cybersecurity activities planned for the upcoming modules.
 
 ---
 
 ## Evidence
 
-The repository includes screenshots showing the major setup and verification steps:
+The repository contains screenshots documenting the major setup and verification stages:
 
 | Screenshot | Description |
 |---|---|
 | `01-virtualbox-installation.png` | Oracle VirtualBox installation |
 | `02-nat-network.png` | NAT Network configuration |
-| `03-kali-vm-network.png` | Kali Linux VM network configuration |
-| `04-kali-ipv4-settings.png` | Kali Linux IPv4 configuration |
+| `03-kali-vm-network.png` | Kali Linux virtual machine network configuration |
+| `04-kali-ipv4-settings.png` | Kali Linux network configuration |
 | `05-shared-folder-verification.png` | Shared folder verification |
 
 ---
 
-## Network Verification
+## Completion Status
 
-The Kali Linux virtual machine was configured with:
+**Week 1 – Project Module 1: Completed**
 
-```text
-IP Address : 10.0.0.2/24
-Gateway    : 10.0.0.1
-DNS Server : 8.8.8.8
+The VirtualBox and Kali Linux cybersecurity lab was successfully configured, tested, and prepared for the upcoming practical cybersecurity modules.
